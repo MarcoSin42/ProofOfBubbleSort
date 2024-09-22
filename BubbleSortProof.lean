@@ -55,7 +55,7 @@ def bubble_sort (lst : List ℕ) : List ℕ :=
           have pass_eq_xxs : pass = x::xs := by
             sorry
 
-        have terminates: sizeOf lst < sizeOf xs := by sorry
+        have terminates: sizeOf xs < sizeOf lst := by sorry
         bubble_sort pass
     | (false,[]) => []
 
